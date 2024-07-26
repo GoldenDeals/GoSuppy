@@ -1,0 +1,3 @@
+address: ":3000"
+certFile: ./cert.pem
+keyFile: ./key.pem

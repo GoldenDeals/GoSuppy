@@ -1,0 +1,14 @@
+version: "3.5"
+
+services:
+  supplier:
+    build:
+      context: .
+    restart: always
+    container_name: supplier
+    environment:
+      - MONGODB_REPLICA_SET_KEY=replicasetkey123
+    ports:
+      - 3000:3000
+    volumes:
+      - ./plugins:/plugins:ro
